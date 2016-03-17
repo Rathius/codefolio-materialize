@@ -41,15 +41,36 @@ Template.registerHelper('formatDate', function(date){
     return moment(date).format('MMMM Do YYYY, h:mm:ss a');
 });
 
-Template.registerHelper('getSiteTitle', function(date){
-    return "Codefolio";
+Template.registerHelper('getSiteTitle', function(){
+    return "Rathius.com";
 });
 
-Template.registerHelper('getAdminName', function(date){
-    return "John Doe";
+Template.registerHelper('getAdminName', function(){
+    return "Gary Glasscock";
 });
 
-Template.registerHelper('getAdminImage', function(date){
-    return '/assets/img/user.png';
+Template.registerHelper('getAdminImage', function(){
+    return '/assets/img/me2.jpg';
 });
 
+Template.registerHelper('getAdminImage2', function(){
+    return '/assets/img/me3.jpg';
+});
+
+Template.nav.onRendered(function () {
+	$(".dropdown-button").dropdown({
+      closeOnClick: true // Closes dropdown on <a> clicks, useful for Angular/Meteor
+    }
+  );
+    $(".button-collapse").sideNav({
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+  	$('.collapsible').collapsible();
+});
+
+
+  // Initialize collapse button
+  // $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //

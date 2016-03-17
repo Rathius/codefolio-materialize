@@ -1,3 +1,93 @@
+body {
+	background-color:#000 !important;
+}
+
 .input-group-addon {
     float: left;
+}
+
+nav {
+	background-color: #2C3E50;
+	
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #4C706A;
+    background-image: url('assets/img/foggy-cover-3.png');
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/*header img {
+    display: block;
+	box-shadow: 0 0 50px 7px #333;
+    margin: 0 auto 20px;
+}*/
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.about-header {
+	background-image: url('assets/img/foggy-cover.png') !important;
+}
+
+.page-footer {
+	background-color: #445d76 !important;
+}
+
+.footer-copyright {
+	background-color: #2C3E50 !important;
+}
+
+.bio {
+	
+}
+
+.info {
+	
+}
+
+.pt {
+	background-color: #cbcac8;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+.gt {
+	background-color: #e3e0d0 !important;
+	border-radius: 10px;
+}
+
+.gt h3 {
+	padding-top: 15px;
+}
+
+.mt {
+	background-color: #a9a9a9 !important;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.post-container {
+	background-color: #f3f3f3;
+	border-radius: 10px;
+}
+
+form {
+	margin-bottom: 25px; 
 }

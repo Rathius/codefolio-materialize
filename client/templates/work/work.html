@@ -2,11 +2,14 @@
 
     <!-- +++++ Projects Section +++++ -->
 	
-	<div class="container pt">
-		<div class="row mt centered">	
+	<div class="container z-depth-2">
+		<div class="row gt centered z-depth-3">
+			<h3>A Few Work Samples</h3>
+		</div>
+		<div class="row mt centered z-depth-3">	
 			{{#each projects}}
-			<div class="col-lg-4">
-				<a class="zoom green" href="/project/{{_id}}"><img class="img-responsive" src="{{projectImage}}" alt="" /></a>
+			<div class="col s4 z-depth-4">
+				<a class="zoom green z-depth-5" href="/project/{{_id}}"><img class="responsive-img" src="{{projectImage}}" alt="" /></a>
 				<p>{{name}}</p>
 			</div>
 			{{else}}

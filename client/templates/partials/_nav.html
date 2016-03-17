@@ -1,0 +1,42 @@
+<template name="nav">
+
+	<div class="navbar-fixed">
+		<nav class="z-depth-2">
+			<div class="nav-wrapper">
+				<a href="{{pathFor 'home'}}" class="brand-logo right">{{getSiteTitle}}</a>
+				<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="left hide-on-med-and-down">
+					<li><a href="{{pathFor 'home'}}">Home</a></li>
+					<li><a href="{{pathFor 'about'}}">About</a></li>
+					<li><a href="{{pathFor 'portfolio'}}">Portfolio</a></li>
+					<li><a href="{{pathFor 'services'}}">Services</a></li>
+					<li><a href="{{pathFor 'resume'}}">Resume</a></li>
+					<li><a href="{{pathFor 'blog'}}">Blog</a></li>				
+					<li><a href="{{pathFor 'contact'}}">Contact</a></li>
+		            {{#if currentUser}}
+		                <li><a href="{{pathFor 'list_projects'}}">Admin - Projects</a></li>
+		                <li><a href="{{pathFor 'list_posts'}}">Admin - Posts</a></li>
+		                <li><a href="#" class="logout-user">Logout</a></li>
+		                
+		            {{/if}}
+				</ul>
+				<ul id="mobile-nav" class="side-nav">
+					<li><a href="{{pathFor 'home'}}">Home</a></li>
+					<li><a href="{{pathFor 'about'}}">About</a></li>
+					<li><a href="{{pathFor 'portfolio'}}">Portfolio</a></li>
+					<li><a href="{{pathFor 'services'}}">Services</a></li>
+					<li><a href="{{pathFor 'resume'}}">Resume</a></li>
+					<li><a href="{{pathFor 'blog'}}">Blog</a></li>				
+					<li><a href="{{pathFor 'contact'}}">Contact</a></li>
+		            {{#if currentUser}}
+		                <li><a href="{{pathFor 'list_projects'}}">Admin - Projects</a></li>
+		                <li><a href="{{pathFor 'list_posts'}}">Admin - Posts</a></li>
+		                <li><a href="#" class="logout-user">Logout</a></li>
+		                
+		            {{/if}}
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+</template>

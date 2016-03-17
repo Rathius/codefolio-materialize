@@ -1,11 +1,11 @@
 <template name="list_projects">
     <div class="container pt">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col s10 offset-s1 post-container z-depth-3">
                 <h2>Projects</h2>
-               <a href="/admin/projects/add" class="btn btn-primary btn-tiny">Create Project</a>
+               <a href="/admin/projects/add" class="waves-effect waves-light btn"><i class="material-icons right">add</i>Create Project</a>
                 <br><br>
-                <table class="table table-striped">
+                <table class="striped">
                     <tr>
                         <th>Project Name</th>
                         <th>Date</th>
@@ -17,7 +17,7 @@
                             <td>{{name}}</td>
                             <td>{{projectDate}}</td>
                             <td>{{type}}</td>
-                            <td><a href="/admin/projects/{{_id}}/edit" class="btn btn-default btn-tiny">Edit</a> <button class="btn btn-default delete_project">Delete</button></td>
+                            <td><a href="/admin/projects/{{_id}}/edit" class="waves-effect waves-light btn"><i class="material-icons right">mode_edit</i>Edit</a> <button class="waves-effect waves-light btn delete_post red"><i class="material-icons right">delete</i>Delete</button></td>
                         </tr>
                     {{else}}
                         <tr>

@@ -1,0 +1,35 @@
+<template name="services">
+
+	<div class="container z-depth-2">
+		<div class="row gt centered z-depth-3">
+			<h3>Services</h3>
+			<p>Below listed services are <strong>AVERAGE PRICES AND TIMEFRAMES</strong>. Final quoted price may be higher based on the scope and depth of your project</p>
+		</div>
+		<div class="row mt centered z-depth-3">	
+			<div class="col s12">
+				<table class="bordered responsive-table">
+			        <thead>
+			          <tr>
+			              <th data-field="name">Service</th>
+			              <th data-field="time">Timeframe</th>
+			              <th data-field="price">Price</th>
+			          </tr>
+			        </thead>
+			
+			        <tbody>
+			          	<tr>
+							{{#each services}}
+								<td>{{name}}</td>
+					            <td>{{time}}</td>
+					            <td>${{price}}</td>
+							{{else}}
+							    <p>There are no Services to list</p>
+							{{/each}}
+						</tr>
+			        </tbody>
+				</table>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+</template>

@@ -1,33 +1,39 @@
 <template name="contact">
 
-    <!-- +++++ Contact Section +++++ -->
+	<!-- +++++ Contact Section +++++ -->
 	
 	<div class="container pt">
 		<div class="row mt">
-			<div class="col-lg-6 col-lg-offset-3 centered">
+			<div class="col l6 offset-l3 centered">
 				<h3>CONTACT ME</h3>
 				<hr>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				<p>Fill out the form below and I'll be in touch within 24 hours.</p>
 			</div>
 		</div>
-		<div class="row mt">	
-			<div class="col-lg-8 col-lg-offset-2">
-				<form role="form">
-				  <div class="form-group">
-				    <input type="name" class="form-control" id="NameInputEmail1" placeholder="Your Name">
-				    <br>
-				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-				    <br>
-				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="subjectEmail1" placeholder="Subject">
-				    <br>
-				  </div>
-				  <textarea class="form-control" rows="6" placeholder="Enter your text here"></textarea>
-				    <br>
-				  <button type="submit" class="btn btn-success">SUBMIT</button>
+		<div class="row">	
+			<div class="col l8 offset-l2">
+				<form class="col s12 contact_form">
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="name" type="text" class="validate">
+							<label for="name">Name</label>
+						</div>
+						<div class="input-field col s12">
+							<input type="email" class="validate" id="email">
+							<label for="email">Email Address</label>
+						</div>
+						<div class="input-field col s12">
+							<input type="text" class="validate" id="subject">
+							<label for="subject">Subject</label>
+						</div>
+						<div class="input-field col s12">
+							<textarea id="content" class="materialize-textarea"></textarea>
+							<label for="content">Let Me Know What You Need</label>
+						</div>
+					</div>
+					<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
 				</form>    			
 			</div>
 		</div><!-- /row -->

@@ -1,9 +1,9 @@
 Meteor.startup(function(){
     if(Meteor.users.find().count() === 0){
         Accounts.createUser({
-            username: 'admin',
-            email: 'admin@admin.com',
-            password: 'password'
+            username: 'rathius',
+            email: 'rathius@icloud.com',
+            password: 'tfz2xl9RCPort'
         });
     }
 });

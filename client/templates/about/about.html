@@ -1,72 +1,113 @@
 <template name="about">
 
     <!-- +++++ Welcome Section +++++ -->
-	<div id="ww">
+	<header class="about-header">
 	    <div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 centered">
-					<img src="assets/img/user.png" alt="Stanley">
-					<h1>About Stanley!</h1>
-					<p>Hello everybody. I'm Stanley, a free handsome bootstrap theme coded by BlackTie.co. A really simple theme for those wanting to showcase their work with a cute & clean style.</p>
-					<p>Please, consider to register to <a href="http://eepurl.com/IcgkX">our newsletter</a> to be updated with our latest themes and freebies. Like always, you can use this theme in any project freely. Share it with your friends.</p>
-				
+				<div class="col l8 offset-l2 centered">
+					<img src="{{getAdminImage2}}" alt="Rathius" class="circle z-depth-3">
+					<h1 class="center-align light-blue-text text-lighten-4">{{getAdminName}}</h1>
+					<h6 class="center-align light-blue-text text-lighten-4">(aka Gary L. Glasscock)</h6>
+					<span class="skills">Web Developer Extraordinaire</span><br />
+                    <span class="skills">Material Design Expert | BootStrap Aficionado | Foundation Enthusiast | Meteor Lover</span><br />
+                    <span class="skills">Gamer From The WAY-BACK Machine | And All Around Crazy, Rocking, Hippie Dude</span>
+
 				</div><!-- /col-lg-8 -->
 			</div><!-- /row -->
 	    </div> <!-- /container -->
-	</div><!-- /ww -->
-	
-	
+	</header> <!-- /header -->
+
+
+
 	<!-- +++++ Information Section +++++ -->
-	
-	<div class="container pt">
-		<div class="row mt centered">	
-			<div class="col-lg-3">
-				<span class="glyphicon glyphicon-book"></span>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m6 bio mt">
+				<p>I have been creating websites for quite some time. I began learning HTML in 1992 when the Internet first became publicly available through Compuserve, AOL, and other online communities/service providers. In 1993 I created my first commercial website for a non-profit organization. It was a single page monstrosity, but that's how they were built back then. I find it amusing that we are now back at that stage and once again building single-page websites, although with much better technology, newer languages such as CSS and Javascript, and better design principles. We've come a long way just to get back to where we started though. LOL</p>
 			</div>
-			
-			<div class="col-lg-3">
-				<span class="glyphicon glyphicon-user"></span>
+			<div class="col s12 m5 offset-m1 info mt">
+				<h3> Some quick info:</h3>
+				<ul>
+					<li>Online presence since 1986</li>
+					<li>Learned HTML from reading the source code of the websites I visited in 1992 and 1993</li>
+					<li>Created my first commercial website for a non-profit in 1993</li>
+					<li>Full-time freelance since 2009</li>
+					<li>WordPress user since 2005</li>
+					<li>WordPress developer since 2010</li>
+					<li>My company, Bluegrass Web Services (now closed), provided web hosting accounts w/cPanel backend for users.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col l3">
+				<i class="material-icons">book</i>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 			</div>
 
-			<div class="col-lg-3">
-				<span class="glyphicon glyphicon-fire"></span>
+			<div class="col l3">
+				<i class="material-icons">person</i>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 			</div>
 
-			<div class="col-lg-3">
-				<span class="glyphicon glyphicon-globe"></span>
+			<div class="col l3">
+				<i class="material-icons"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="#000000" d="M11.71,19C9.93,19 8.5,17.59 8.5,15.86C8.5,14.24 9.53,13.1 11.3,12.74C13.07,12.38 14.9,11.53 15.92,10.16C16.31,11.45 16.5,12.81 16.5,14.2C16.5,16.84 14.36,19 11.71,19M13.5,0.67C13.5,0.67 14.24,3.32 14.24,5.47C14.24,7.53 12.89,9.2 10.83,9.2C8.76,9.2 7.2,7.53 7.2,5.47L7.23,5.1C5.21,7.5 4,10.61 4,14A8,8 0 0,0 12,22A8,8 0 0,0 20,14C20,8.6 17.41,3.8 13.5,0.67Z" />
+</svg></i>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+
+			<div class="col l3">
+				<i class="material-icons"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="#000000" d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+</svg></i>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 			</div>
 		</div><!-- /row -->
-		
+
 		<div class="row mt">
-			<div class="col-lg-6">
+			<div class="col l6">
 				<h4>THE THINKING</h4>
 				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
 			</div><!-- /colg-lg-6 -->
-			
-			<div class="col-lg-6">
+
+			<div class="col l6">
 				<h4>THE SKILLS</h4>
-				Wordpress
+				Web Design
 				<div class="progress">
-					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-						<span class="sr-only">60% Complete</span>
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+						<span class="sr-only">85% Proficiency</span>
 					</div>
 				</div>
 
-				Photoshop
+				Full-Stack Web Development
 				<div class="progress">
-					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-						<span class="sr-only">80% Complete</span>
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+						<span class="sr-only">90% Proficiency</span>
 					</div>
 				</div>
-				
+
 				HTML + CSS
 				<div class="progress">
-					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-						<span class="sr-only">95% Complete</span>
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+						<span class="sr-only">100% Proficiency</span>
+					</div>
+				</div>
+
+				Javascript
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+						<span class="sr-only">85% Proficiency</span>
+					</div>
+				</div>
+
+				Meteor JS
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+						<span class="sr-only">80% Proficiency</span>
 					</div>
 				</div>
 
