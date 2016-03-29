@@ -4,18 +4,25 @@
 	    <div class="row">
 	        <div class="col s10 offset-s1 post-container z-depth-3">
 	            <h2>Blog Posts</h2>
-	            <a href="/admin/posts/add" class="waves-effect waves-light btn"><i class="material-icons right">add</i>Create Posts</a>
+	            <a href="/admin/posts/add" class="waves-effect waves-light btn green darken-1"><i class="material-icons right">add</i>Create Posts</a>
 	            <br><br>
 	            <table class="table table-striped">
 	                <tr>
 	                    <td>Post Title</td>
 	                    <td>Last Update</td>
+	                    <td>Published</td>
 	                    <td></td>
 	                </tr>
 	                {{#each posts}}
 	                    <tr>
 	                        <td>{{title}}</td>
 	                        <td>{{formatDate updatedAt}}</td>
+	                        <td>{{#if published}}
+		                        	<i class="material-icons">check_circle</i>
+		                        {{else}}
+		                        	<i class="material-icons">cancel</i>
+		                        {{/if}}
+	                        </td>
 	                        <td><a href="/admin/posts/{{_id}}/edit" class="waves-effect waves-light btn"><i class="material-icons right">mode_edit</i>Edit</a> <button class="waves-effect waves-light btn delete_post red"><i class="material-icons right">delete</i>Delete</button></td>
 	                    </tr>
 	                {{else}}

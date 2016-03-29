@@ -1,36 +1,19 @@
-Temmplate.add_post.onRendered(function(){
+Template.add_post.onRendered(function(){
 	$('#postContent').materialnote();
 });
 
 Template.add_post.events({
     'submit .add_post_form': function(event){
         var title = event.target.title.value;
+        var description = event.target.description.value;
         var body = event.target.postContent.value;
         
         // Insert Post
-/*
         Posts.insert({
             title: title,
-            body: body,
-            
+            description: description,
+            body: body
         });
-*/
-        
-        Meteor.call('insertPost', {
-					title:			form.title.value,
-					slug:			slug,
-					description:	form.description.value,
-					text:			form.text.value,
-				}, function(error, slug) {
-					Session.set('saveButton', 'Save Post');
-					
-					if(error) {
-						return alert(error.reason);
-					}
-					
-					// Here we use the probably changed slug from the server side method
-					Router.go('Post', {slug: slug});
-				});
         
         FlashMessages.sendSuccess("Post Added");
         Router.go('/admin/posts');
@@ -40,9 +23,14 @@ Template.add_post.events({
     }
 });
 
+Template.edit_post.onRendered(function(){
+	$('#postContent').materialnote();
+});
+
 Template.edit_post.events({
     'submit .edit_post_form': function(event){
         var title = event.target.title.value;
+        var description = event.target.description.value;
         var body = event.target.body.value;
         
         // Update Post
@@ -51,6 +39,7 @@ Template.edit_post.events({
         },{
             $set:{
                 title: title,
+                description: description,
                 body: body
             }
         });
@@ -74,3 +63,5 @@ Template.list_posts.events({
         }
     }
 });
+
+

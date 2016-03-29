@@ -40,7 +40,7 @@ Template.edit_service.events({
     }
 });
 
-Template.list_servicess.events({
+Template.list_services.events({
     'click .delete_services': function(event){
         if(confirm("Are you sure?")){
             Servicess.remove(this._id);
